@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title></title>
+		<title>Wide World Travel</title>
 			<meta charset="utf-8">
-<!-- 	<link rel="stylesheet" href="css/normalize.css"> -->
-			<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	
-	<body>
-		<wrapper>
-
-			<header>
-				<h1></h1>
-			</header>
+	<body ng-app="wwtApp">
+	<header ng-include="'partials/greeting.html'">
+		<br>
+		
+	</header>
 			
-
+			<div ng-view></div>
 
 			
 			
 			<footer></footer>
 			
-		</wrapper><!--/.wrapper-->
 
-		<script type="text/javascript" src="javascripts/main.js"></script>
+    <!-- SCRIPTS -->		
+		<script src="./lib/node_modules/angular/angular.min.js"></script>
+		<script src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./app/app.js"></script>
 
+
+
+			<!-- FACTORIES -->
+			<script src="./app/factories/bookFactory.js"></script>
+	
+
+			<!-- CONTROLLERS -->
+			<script src="./app/controllers/bookCtrl.js"></script>
+	
 	</body>	
 </html>
 
